@@ -1,0 +1,215 @@
+==========================
+Words & expressions
+==========================
+
+CLI: 
+	Command Line Interface
+
+bleeding edge: 
+	(from Wiki) Bleeding edge technology is a category of technologies so new that they could have a high risk of being unreliable and lead adopters to incur greater expense in order to make use of them. A technology may be considered bleeding edge where it contains a degree of risk, or, more generally, there is a significant downside to early adoption.
+
+delving into sth:
+	深入钻研...
+
+incremental search:
+	in incremental searches, the Enter key will select the next match and dismiss the search panel.	
+
+
+==========================
+Usefule settings
+==========================
+close auto-update
+	Preferences --> Settings --> User setting --> add { "update_check":false }
+
+命令行【我的电脑-属性】
+	Win+R --> sysdm.cpl (Advanced --> Environment Variables…)
+
+命令行启动
+	1）put installation path of SublimeText3 into system variable 'PATH' (C:\Program Files\SublimeText3);
+	2）create a .bat file as follows: 
+--------------
+st3.bat:
+@echo off
+start sublime_text.exe %*
+--------------
+	3）Open specific file/foler：Win+R --> st3 C:\Users\andon\Desktop\test.txt
+	4) explanation:
+		The first line turns off the echo of the .bat file. This means that we won't see any output when we run the file. 
+		The second line start the sublime_text executable with the given parameters.
+	5）Demos:
+		subl filename ("filename" is the filename to edit)
+		subl foldername ("foldername" is the folder to open)
+		subl . (to open the current directory)
+
+toggle sidebar
+	1) Ctrl + KB
+	2) Ctrl + Shift + P --> ts (View: Toggle side bar)
+
+font size
+	1) increase: Ctrl + =
+	2) decrease: Ctrl + +
+	3) holding the Ctrl key while zooming in and out
+
+toggle MiniMap
+	Ctrl + Shift + P --> vtm (View: Toggle Minimap)
+
+close current tab
+	Ctrl + W
+
+open new tab
+	Ctrl + N
+
+open new window
+	Ctrl + Shift + N
+
+jump between open tabs
+	Alt + # (LTR)
+
+go to next tab( --> )
+	Ctrl + PageDown
+	Ctrl + Tab
+
+go to previous tab( <-- )
+	Ctrl + PageUp
+	Ctrl + Shift + Tab
+
+go to line
+	Ctrl + G
+
+Go To matching bracket
+	Ctrl + M
+
+Sublime's command palette
+	Ctrl + Shift + P
+
+open the Python console
+	Ctrl+` 
+	View | Show Console
+
+Toggle Regular Expressions
+	Alt + R
+
+Toggle Case Sensitivity 
+	Alt + C 
+
+Toggle Exact Match (whole word)
+	Alt + W 
+
+Find Next 
+	Enter
+
+Find Previous 
+	Shift + Enter
+
+Find All 
+	select all mathes: Alt + Enter
+	highlight all matches: Alt + F3
+
+Toggle Replace Window
+	Ctrl + H
+
+Replace All
+	Ctrl + Alt + Enter
+
+reference the first matching group
+	$1 or \1
+
+incremental search (find the last one and hide the search bar on pressing Enter)
+	Ctrl + I
+
+multiple file search / replace
+	Ctrl + Shift + F
+	Demo: 
+		find: INSERT
+		where: /C/Users/Dan/Cool Project,*.rb,<open files>
+		where: /C/Users/Dan/Cool Project,*.rb,<open folders>
+
+
+Add all occurrences of selected text to selection
+	Alt + F3
+
+Column Selection
+	pressing Shift and dragging the right mouse button (on Windows)
+
+fuzzy search in the current file
+	Ctrl + ;
+	equivalent to /Ctrl+P, and press ;/
+
+symbol search in the current file
+	Ctrl + R
+	equivalent to /Ctrl+P, and press @/
+
+=========================================================
+=========================================================
+====         The must-know shortcuts map             ====
+=========================================================
+=========================================================
+The following is a must-know shortcuts map for Sublime Text:
+
+[[General]]
+	General shortcuts for Sublime's basic features are as follows:
+--------------------------------------------------------------------------
+Command 					Windows/Linux 			OS X
+--------------------------------------------------------------------------
+Open the command palette 	Ctrl + Shift + P 		command + Shift + P
+Toggle Side Bar 			Ctrl + KB 				command + KB
+Show scope in status bar 	Ctrl + Shift + Alt + P 	Control + Shift + P
+Python Console 				Ctrl + ` 				Control + `
+New Window 					Ctrl + Shift + N 		command + Shift + N
+
+
+[[Tabs]]
+	Shortcuts to control tabbing in Sublime:
+--------------------------------------------------------------------------
+Command 					Windows/Linux 			OS X
+--------------------------------------------------------------------------
+New Tab 					Ctrl + N 				command + N
+Close Tab 					Ctrl + W 				command + W
+Open last closed Tab 		Ctrl + Shift + T 		command + Shift + T
+Next Tab 					Ctrl + Tab 				Control + Tab
+Previous Tab 				Ctrl + Shift+Tab 		Control + Shift + Tab
+--------------------------------------------------------------------------
+
+
+[[Bookmarks]]
+	We can toggle bookmarks on lines and then jump between them. Here are the shortcuts for using Bookmarks:
+--------------------------------------------------------------------------
+Command 					Windows/Linux 			OS X
+--------------------------------------------------------------------------
+Toggle Bookmark 			Ctrl + F2 				command + F2
+Next Bookmark 				F2 						F2
+Previous Bookmark 			Shift + F2 				Shift + F2
+Clear Bookmarks 			Ctrl + Shift + F2 		command + Shift + F2
+--------------------------------------------------------------------------
+
+
+[[Editing]]
+	All Sublime shortcuts that are related to editing text/code:
+--------------------------------------------------------------------------
+Command 					Windows/Linux 			OS X
+--------------------------------------------------------------------------
+Delete line 				Ctrl + X				command + X
+							Ctrl + Shift + K
+Insert line after 			Ctrl + Enter 			command + Enter
+Insert line before 			Ctrl + Shift + Enter 	command + Shift + Enter
+Move line Up/Down 			Ctrl + Shift + ↑ / ↓	command + Control + ↑ / ↓
+Select line 				Ctrl + L 				command + L
+Select word 				Ctrl + D 				command + D
+Jump to matching bracket 	Ctrl + M 				Control + M
+Delete from cursor to end 	Ctrl + KK 				command + KK
+of line 					
+Delete from cursor to start Ctrl + K + backspace 	command + K + backsapce
+of line
+Indent current lines 		Ctrl + ] 				command + ]
+Un-indent current lines 	Ctrl + [ 				command + [
+Duplicate lines 			Ctrl + Shift + D 		command + Shift + D
+Join lines 					Ctrl + J 				command + J
+Toggle comment for current	Ctrl + / 				command + /
+line
+Block comment selection 	Ctrl + Shift + / 		command + Option + /
+Undo 						Ctrl + Z 				command + Z
+Redo 						Ctrl + Y 				command + Y
+Paste and indent correctly 	Ctrl + Shift + V 		command + Shift + V
+--------------------------------------------------------------------------
+
+
